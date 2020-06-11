@@ -91,7 +91,9 @@ ul{padding: 0;}
     }
     a{
         margin-bottom: 80px;
+        width: 200px;
     }
+    
     .question{
         font-size: 220%;
     }
