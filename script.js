@@ -1,5 +1,5 @@
 (function() {
-let number = Math.floor(Math.random() * 4) + 1;
+let number = Math.floor(Math.random() * 8) + 1;
 let newP = document.createElement("p");
 
 
@@ -18,10 +18,14 @@ let count = 0;
 
 
 let player = [
-    {nb: 1, names: ["toldo","peruzzi","julio cesar",]},
-    {nb: 2, names: ["cordoba","vrsaljko","bergomi","panucci"]},
+    {nb: 1, names: ["toldo","peruzzi","julio cesar","handanovic","frey"]},
+    {nb: 2, names: ["godin","cordoba","vrsaljko","bergomi","panucci"]},
     {nb: 3, names: ["burdisso","fachetti","kallon",]},
-    {nb: 4, names: ["zanetti","berti","manicone",]}
+    {nb: 4, names: ["zanetti","berti","manicone",]},
+    {nb: 5, names: ["gagliardini","stankovic","juan jesus",]},
+    {nb: 6, names: ["de vrij","joao mario","lucio","maxwell","zanetti","djorkaeff"]},
+    {nb: 7, names: ["sanchez","karamoh","kondogbia","cancelo","coutinho","figo","quaresma"]},
+    {nb: 8, names: ["vecino","jovetic","rafinha","thiago motta","ibrahimovic"]}
 ];
 // LANCER L ACTION DU BOUTTON SI JAMAIS ON APPUIE SUR ENTER 
     document.getElementById("num").innerHTML = number;
