@@ -56,7 +56,7 @@ let player = [
 
         player.forEach(element => {
 
-            if(element.names.includes(guessedName) && number == element.nb  ){
+            if(element.names.includes(guessedName.toLowerCase()) && number == element.nb){
                 if(tableAnswer.includes(number+" "+guessedName)){
                     document.getElementById("userGoodResponse").insertAdjacentElement('beforebegin', newPalready).innerHTML = "réponse déjà donnée";
                     setTimeout(function() {
