@@ -53,10 +53,12 @@ let player = [
     document.getElementById("run").addEventListener("click",function(){
         guessedName = document.getElementById("answer").value;
         console.log(guessedName);
-
+        let test = player.includes(guessedName);
+        console.log(test);
+        
         player.forEach(element => {
 
-            if(element.names.includes(guessedName.toLowerCase()) && number == element.nb){
+            if(number == element.nb && element.names.includes(guessedName.toLowerCase()) ){
                 if(tableAnswer.includes(number+" "+guessedName)){
                     document.getElementById("userGoodResponse").insertAdjacentElement('beforebegin', newPalready).innerHTML = "réponse déjà donnée";
                     setTimeout(function() {
@@ -93,13 +95,16 @@ let player = [
                 }
                
 
-            }else{
-                document.getElementById("userGoodResponse").insertAdjacentElement('beforebegin', newPwrong).innerHTML = " Mauvaise réponse";
+            } else{
+            
+                    document.getElementById("userGoodResponse").insertAdjacentElement('beforebegin', newPwrong).innerHTML = " Mauvaise réponse";
                     setTimeout(function() {
-                          document.getElementById("casper3").innerHTML = "";
-                        },2000);
-                document.getElementById("answer").value = null;
+                            document.getElementById("casper3").innerHTML = "";
+                            },2000);
+                    document.getElementById("answer").value = null;
+        
             }
+            
         });
         
         
